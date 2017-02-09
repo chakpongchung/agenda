@@ -1,37 +1,35 @@
-#include "AgendaController.h"
-#include<fstream>
+#include <fstream>
 #include <iostream>
+#include "AgendaController.h"
 
 using namespace std;
 
-int main(){
-    while(1){
-    cout << "ÄãÏëÓÃÅú´¦ÀíÂğ£¿(Y/N)" << endl;
+int main() {
+  while (1) {
+    cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Y/N)" << endl;
     string choice;
     cin >> choice;
-    
-    if(choice == "N") break;  
-    //Ñ¡ÔñN  ÈÔ½øÈëÃüÁîµÄÊäÈë 
-    else if( choice == "Y")  
-    //Ñ¡ÔñY   Ôò½øĞĞÅú´¦ÀíÎÄ±¾ÃüÁîÊäÈë 
-    {
-        freopen("in.txt","r",stdin);
-		freopen("out.txt","w",stdout);
-		break;
-    }
-    //ÆäËûµÄÊÓÎª·Ç·¨ÊäÈë£¬ÖØĞÂ½øĞĞÊäÈë 
-    else
-    {
-       cout << "command illegal!" << endl;
-    }
-    }
-    
-	AgendaController agendaController;   
-    // Éú³ÉUI²ãµÄ¶ÔÏó 
 
-	agendaController.getOperation();  
-     // Agenda»áÒéÏµÍ³µÄ½Ó¿Ú 
-	
+    if (choice == "N") break;
+    //Ñ¡ï¿½ï¿½N  ï¿½Ô½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    else if (choice == "Y")
+    //Ñ¡ï¿½ï¿½Y   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    {
+      freopen("in.txt", "r", stdin);
+      freopen("out.txt", "w", stdout);
+      break;
+    }
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ç·ï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    else {
+      cout << "command illegal!" << endl;
+    }
+  }
 
-	return 0;
+  AgendaController agendaController;
+  // ï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+
+  agendaController.getOperation();
+  // Agendaï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ä½Ó¿ï¿½
+
+  return 0;
 }

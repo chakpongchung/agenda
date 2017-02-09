@@ -11,58 +11,56 @@
 using namespace std;
 
 class AgendaController {
-private:
-	User *currentUser;
-	AgendaService agendaService;
+ private:
+  User *currentUser;
+  AgendaService agendaService;
 
-	bool executeOperation( string op );  
-    //解析执行指令 
+  bool executeOperation(string op);
+  //锟斤拷锟斤拷执锟斤拷指锟斤拷
 
-	void userLogIn( );   
-    //用户登录 
-	void userRegister( );
-    // 用户注册 
-	void userLogOut( );
-    //用户登出 
-	void deleteUser( );
-    //删除当前用户 
-	void listAllUsers( );
-    //打印列出所有注册用户 
-	
-	void createMeeting( );
-    //创建一个新的会议 
-	void listAllMeetings( );
-    //打印用户所有相关的会议 
-	void listAllSponsorMeetings( );
-    //打印所有 用户为发起者的会议 
-	void listAllParticipateMeetings( );
-    //打印所有 用户为参会者的会议 
-	void queryMeetingByTitle( );
-    //根据Title查询用户会议 
-	void queryMeetingByTimeInterval( );
-    //根据时间查询用户会议 
-	void deleteMeetingByTitle( );
-    //根据Title删除会议 
-	void deleteAllMeetings( );
-    //删除所有 用户作为发起者的会议 
+  void userLogIn();
+  //锟矫伙拷锟斤拷录
+  void userRegister();
+  // 锟矫伙拷注锟斤拷
+  void userLogOut();
+  //锟矫伙拷锟角筹拷
+  void deleteUser();
+  //删锟斤拷锟斤拷前锟矫伙拷
+  void listAllUsers();
+  //锟斤拷印锟叫筹拷锟斤拷锟斤拷注锟斤拷锟矫伙拷
 
-	void printMeetings( list<Meeting> meetings );
-    //打印会议 
-	void updateUserPassword();
-	void updateUserEmail();
-	void updateUserPhone();
-	void updateMeetingParticipator();
-	void updateMeetingStartDate();
-	void updateMeetingEndDate();
-	void updateMeetingTitle();
+  void createMeeting();
+  //锟斤拷锟斤拷一锟斤拷锟铰的伙拷锟斤拷
+  void listAllMeetings();
+  //锟斤拷印锟矫伙拷锟斤拷锟斤拷锟斤拷锟截的伙拷锟斤拷
+  void listAllSponsorMeetings();
+  //锟斤拷印锟斤拷锟斤拷 锟矫伙拷为锟斤拷锟斤拷锟竭的伙拷锟斤拷
+  void listAllParticipateMeetings();
+  //锟斤拷印锟斤拷锟斤拷 锟矫伙拷为锟轿伙拷锟竭的伙拷锟斤拷
+  void queryMeetingByTitle();
+  //锟斤拷锟斤拷Title锟斤拷询锟矫伙拷锟斤拷锟斤拷
+  void queryMeetingByTimeInterval();
+  //锟斤拷锟斤拷时锟斤拷锟斤拷询锟矫伙拷锟斤拷锟斤拷
+  void deleteMeetingByTitle();
+  //锟斤拷锟斤拷Title删锟斤拷锟斤拷锟斤拷
+  void deleteAllMeetings();
+  //删锟斤拷锟斤拷锟斤拷 锟矫伙拷锟斤拷为锟斤拷锟斤拷锟竭的伙拷锟斤拷
 
+  void printMeetings(list<Meeting> meetings);
+  //锟斤拷印锟斤拷锟斤拷
+  void updateUserPassword();
+  void updateUserEmail();
+  void updateUserPhone();
+  void updateMeetingParticipator();
+  void updateMeetingStartDate();
+  void updateMeetingEndDate();
+  void updateMeetingTitle();
 
-public:
-	AgendaController( );
-    //默认构造函数 
-	void getOperation( );
-    //接口 
-
+ public:
+  AgendaController();
+  //默锟较癸拷锟届函锟斤拷
+  void getOperation();
+  //锟接匡拷
 };
 
 #endif
